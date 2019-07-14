@@ -3,6 +3,7 @@ package com.chidii.alc4;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
@@ -10,12 +11,12 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnprofile, btnaboutALC;
-    //private WebView wvAboutALC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         btnprofile = (Button) findViewById(R.id.buttonMyProfile);
         btnaboutALC = (Button) findViewById(R.id.buttonAboutALC);
