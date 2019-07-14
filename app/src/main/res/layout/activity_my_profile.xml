@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:id="@+id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/profile_pix"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Chidiebere Alfred Levi"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/profileName"
+        android:layout_marginTop="0dp"
+        android:background="#000000"></View>
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:text="Track: Android"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/track"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:text="Country: Nigeria"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="Email: chidiebere.levi@gmail.com"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="Phone Number: 2348169170369"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+    <TextView
+        android:id="@+id/slack_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="Slack Username: @chidiebere_Levi"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
